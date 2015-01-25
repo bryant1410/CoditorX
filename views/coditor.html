@@ -47,6 +47,9 @@
                                 <li class="unshare" onclick="side.unshare();">
                                     <span class="ico-undo font-ico"></span> Unshare
                                 </li>
+                                <li onclick="side.getDocURL()">
+                                    <span class="ico-share font-ico"></span> Doc URL
+                                </li>
                             </ul>
                         </div>
                         <div id="filesNewMenu" class="frame">
@@ -124,6 +127,7 @@
                     var i18n = {{.i18n}};
                     var workspace = {{.workspace}};
                     var pathSeparator = {{.pathSeparator}};
+                    var userName = '{{.currentuser.Username}}';
                     function newRequest() {
                     return {
                     sid: coditor.sessionId

@@ -24,7 +24,8 @@ var coditor = {
     pathSeparator: undefined,
     init: function () {
         var height = $(".main").height() - $(".menu").height();
-        $(".preview, .welcome").height(height);
+        $(".preview").height(height - 20);
+        $(".welcome").height(height);
         $(".welcome").css('padding-top', (height - 80) / 2 + 'px');
 
         $(window).resize(function () {
@@ -32,7 +33,8 @@ var coditor = {
             if (editor.codemirror) {
                 editor.codemirror.setSize('50%', height);
             }
-            $(".preview, .welcome").height(height);
+            $(".preview").height(height - 20);
+            $(".welcome").height(height);
             $(".welcome").css('padding-top', (height - 80) / 2 + 'px');
         });
 

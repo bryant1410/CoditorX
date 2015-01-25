@@ -533,5 +533,9 @@ var side = {
         });
 
         menu.listCursors();
+    },
+    getDocURL: function () {
+        var url = 'http://coditorx.b3log.org/' + userName + '/doc/' + $.trim($('#files li.current').text());
+        $('#dialogAlert').dialog('open', '<a href="' + url + '" target="_blank">' + url + '</a>');
     }
 };
