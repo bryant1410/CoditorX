@@ -305,12 +305,16 @@ var side = {
         });
 
         $("#dialogShare").load('/share', function () {
+
+
+
             $("#dialogShare").dialog({
                 "modal": true,
                 "height": 190,
                 "width": 600,
                 "title": 'Share',
                 "afterOpen": function () {
+                    $("#dialogShare").find('input[type=text]').val('');
                     $("#dialogShare .fileName").val(coditor.workspace + coditor.pathSeparator + $.trim($("#files li.current").text()));
                     $("#dialogShare").find('input[type=checkbox]').prop('checked', false);
                     $("#dialogShare").find('.viewers').show();
