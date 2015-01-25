@@ -50,7 +50,7 @@ type config struct {
 var conf *config
 
 func loadConf(confIP, confPort, confChannel string) {
-	bytes, err := ioutil.ReadFile("coditor.json")
+	bytes, err := ioutil.ReadFile("conf/coditor.json")
 	if nil != err {
 		logger.Error(err)
 
