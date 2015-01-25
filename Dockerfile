@@ -8,6 +8,6 @@ ENV GOPATH /gogogo
 
 WORKDIR /gogogo/src/CoditorX
 
-RUN go get -v
+RUN go get -v && go build -v
 
 EXPOSE 9090

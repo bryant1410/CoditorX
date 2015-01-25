@@ -345,7 +345,9 @@ var side = {
                         dataType: "json",
                         success: function (data) {
                             if (!data.succ) {
+
                                 $('#dialogAlert').dialog("open", data.msg);
+                                $("#dialogShare").dialog('close');
                                 return false;
                             }
                             $("#files li.current").data("share", true);
@@ -415,7 +417,6 @@ var side = {
             "ok": function () {
                 var request = newRequest(),
                         name = $("#dialogNewFilePrompt > input").val();
-
                 request.name = name;
 
                 var isOk = false;
