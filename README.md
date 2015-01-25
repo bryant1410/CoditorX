@@ -2,7 +2,7 @@
 
 ## Introduction
 
-CoditorX is an in-browser Markdown editor for multiple players collaborating.
+CoditorX is an in-browser markdown editor for multiple players collaborating.
 
 ## Features
 
