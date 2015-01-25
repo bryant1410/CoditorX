@@ -4,6 +4,8 @@
 
 CoditorX is an in-browser markdown editor for multiple players collaborating.
 
+_Have a try first: [http://coditorx.b3log.org](http://coditorx.b3log.org)_
+
 ## Features
 
 * Allow user to register, everyone has its own workspace
