@@ -294,7 +294,7 @@ var side = {
                     success: function (data) {
                         if (!data.succ) {
                             $('#dialogAlert').dialog("open", data.msg);
-                            return false;
+                            //return false;
                         }
 
                         $('#files li.current').remove();
@@ -385,6 +385,7 @@ var side = {
                     success: function (data) {
                         if (!data.succ) {
                             $('#dialogAlert').dialog("open", data.msg);
+                            $("#dialogRenamePrompt").dialog("close");
                             return false;
                         }
 
@@ -425,6 +426,7 @@ var side = {
                             isOk = true;
                         } else {
                             $('#dialogAlert').dialog("open", data.msg);
+                            $("#dialogNewFilePrompt").dialog("close");
                         }
                     }
                 });
