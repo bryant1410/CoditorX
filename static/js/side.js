@@ -318,6 +318,11 @@ var side = {
                     $("#dialogShare .fileName").val(coditor.workspace + coditor.pathSeparator + $.trim($("#files li.current").text()));
                     $("#dialogShare").find('input[type=checkbox]').prop('checked', false);
                     $("#dialogShare").find('.viewers').show();
+                    var owner = coditor.sessionUsername;
+                    var fileName = $("#files li.current").attr("title");
+                    var publicViewUrl = "http://coditorx.b3log.org/" + owner + "/doc/" + fileName;
+                    $("#dialogShare").find(".publicView").html(publicViewUrl);
+                    $("#dialogShare").find(".publicView").attr("href", publicViewUrl);
                 },
                 "ok": function () {
                     var fileName = $("#dialogShare .fileName").val(),
