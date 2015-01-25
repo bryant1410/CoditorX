@@ -215,9 +215,9 @@ var side = {
             "modal": true,
             "height": 160,
             "width": 310,
-            "title": '提示',
+            "title": 'Prompt',
             "hiddenOk": true,
-            "cancelText": '确认',
+            "cancelText": 'confirm',
             "afterOpen": function (msg) {
                 $("#dialogAlert").html(msg);
             }
