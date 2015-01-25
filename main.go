@@ -17,19 +17,20 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"github.com/gorilla/mux"
 	"html/template"
 	"math/rand"
 	"net/http"
 	"os"
 	"strconv"
 	"time"
+
+	"github.com/gorilla/mux"
 )
 
 func main() {
-	confIP := flag.String("ip", "", "this will overwrite Wide.IP if specified")
-	confPort := flag.String("port", "", "this will overwrite Wide.Port if specified")
-	confChannel := flag.String("channel", "", "this will overwrite Wide.Channel if specified")
+	confIP := flag.String("ip", "", "this will overwrite [IP] if specified")
+	confPort := flag.String("port", "", "this will overwrite [Port] if specified")
+	confChannel := flag.String("channel", "", "this will overwrite [Channel] if specified")
 
 	flag.Parse()
 
