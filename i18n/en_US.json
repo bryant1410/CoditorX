@@ -15,5 +15,6 @@
     "current_user": "Current User",
     "current_session": "Current Session",
     "password": "Password",
-    "login_error": "Login Error"
+    "login_error": "Login Error",
+    "public_view": "Public View"
 }

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-CoditorX is an in-browser text editor for multiple players collaborating.
+CoditorX is an in-browser markdown editor for multiple players collaborating.
 
 ## Features
 
@@ -46,8 +46,8 @@ Licensed under the [Apache License 2.0](https://github.com/b3log/wide/blob/maste
 
 ## Credits
 
-* [CodeMirror](https://github.com/codemirror/codemirror)
 * [Wide](https://github.com/b3log/wide)
+* [CodeMirror](https://github.com/codemirror/codemirror)
 * [go-diff](https://github.com/sergi/go-diff)
 * [Gorilla](https://github.com/gorilla)
 * [Docker](https://docker.com)
