@@ -451,6 +451,9 @@ var side = {
         $("#dialogRenamePrompt").dialog('open');
     },
     open: function (fileName) {
+        $('.content').show();
+        $('.welcome').hide();
+
         var $editor = $("#editor");
         editor.codemirror = CodeMirror.fromTextArea($editor[0], {
             autofocus: true,
@@ -478,7 +481,7 @@ var side = {
             request.color = coditor.color;
 
             editor.channel.send(JSON.stringify(request));
-            
+
             $('.preview').html(markdown.toHTML(editor.codemirror.getValue()));
         });
 

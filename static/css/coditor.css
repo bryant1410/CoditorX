@@ -410,6 +410,14 @@
 }
 /* end menu */
 
+.welcome {
+    background-color: #202021;
+    text-align: center;
+    color: #FFF;
+    font-size: 70px;
+    box-sizing: border-box;
+}
+
 #editor {
     height: 100%;
     width: 50%;

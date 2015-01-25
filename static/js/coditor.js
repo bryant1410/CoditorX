@@ -23,14 +23,17 @@ var coditor = {
     i18n: undefined,
     pathSeparator: undefined,
     init: function () {
-        $(".preview").height($(".main").height() - $(".menu").height());
+        var height = $(".main").height() - $(".menu").height();
+        $(".preview, .welcome").height(height);
+        $(".welcome").css('padding-top', (height - 80) / 2 + 'px');
 
         $(window).resize(function () {
+            var height = $(".main").height() - $(".menu").height();
             if (editor.codemirror) {
-                var height = $(".main").height() - $(".menu").height();
                 editor.codemirror.setSize('50%', height);
-                $(".preview").height(height);
             }
+            $(".preview, .welcome").height(height);
+            $(".welcome").css('padding-top', (height - 80) / 2 + 'px');
         });
 
         // 点击隐藏弹出层
