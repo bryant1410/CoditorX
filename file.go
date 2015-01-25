@@ -152,6 +152,15 @@ func fileNew(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+
+	//check if new name is exits
+	if _, err := os.Stat(filepath.Join(conf.Workspace, user.Username, "workspace", fileName.(string))); err == nil {
+		data["succ"] = false
+		data["msg"] = "newName exits."
+		return
+	}
+
+
 	// create file
 	path := filepath.Join(conf.Workspace, user.Username, "workspace", fileName.(string))
 	file, err := os.Create(path)
@@ -226,6 +235,16 @@ func fileRename(w http.ResponseWriter, r *http.Request) {
 	}
 
 	newName := args["newName"]
+
+
+	//check if new name is exits
+	if _, err := os.Stat(filepath.Join("workspaces", user.Username, "workspace", newName.(string)) ); err == nil {
+		data["succ"] = false
+		data["msg"] = "newName exits."
+		return
+	}
+
+
 	if newName == nil || len(newName.(string)) == 0 {
 		data["succ"] = false
 		data["msg"] = "newName can not be null."
