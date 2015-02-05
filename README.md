@@ -1,5 +1,7 @@
 # CoditorX [![Build Status](https://img.shields.io/travis/gophergala/CoditorX.svg?style=flat)](https://travis-ci.org/gophergala/CoditorX)
 
+**This project has moved to: https://github.com/gophergala/CoditorX**
+
 ## Introduction
 
 CoditorX is an in-browser markdown editor for multiple players collaborating.
