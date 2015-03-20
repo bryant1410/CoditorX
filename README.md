@@ -1,6 +1,8 @@
-# CoditorX [![Build Status](https://img.shields.io/travis/gophergala/CoditorX.svg?style=flat)](https://travis-ci.org/gophergala/CoditorX)
+#This project has moved to: https://github.com/b3log/coditorx !!!!#
 
-**This project has moved to: https://github.com/b3log/coditorx !!!!**
+---- 
+
+# CoditorX [![Build Status](https://img.shields.io/travis/gophergala/CoditorX.svg?style=flat)](https://travis-ci.org/gophergala/CoditorX)
 
 ## Introduction
 
