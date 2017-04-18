@@ -1,4 +1,4 @@
-#This project has moved to: https://github.com/b3log/coditorx !!!!#
+# This project has moved to: https://github.com/b3log/coditorx !!!! #
 
 ---- 
 
